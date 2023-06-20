@@ -20,7 +20,8 @@ enum MapType {
   here,
   petal,
   tomtomgo,
-  sygic,
+  sygicCar,
+  sygicTruck,
 }
 
 /// Defines the supported modes of transportation for [showDirections]

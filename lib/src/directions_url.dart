@@ -223,8 +223,11 @@ String getMapDirectionsUrl({
         ...(extraParams ?? {}),
       });
 
-    case MapType.sygic:
+    case MapType.sygicCar:
       return 'com.sygic.aura://coordinate|${destination.longitude}|${destination.latitude}|drive';
+
+    case MapType.sygicTruck:
+      return 'com.sygic.truck://coordinate|${destination.longitude}|${destination.latitude}|drive';
 
     case MapType.tomtomgo:
       if (Platform.isIOS) {

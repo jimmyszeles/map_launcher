@@ -203,8 +203,11 @@ String getMapMarkerUrl({
         },
       );
 
-    case MapType.sygic:
+    case MapType.sygicCar:
       return 'com.sygic.aura://coordinate|${coords.longitude}|${coords.latitude}|show';
+
+    case MapType.sygicTruck:
+      return 'com.sygic.truck://coordinate|${coords.longitude}|${coords.latitude}|show';
 
     case MapType.tomtomgo:
       if (Platform.isIOS) {
