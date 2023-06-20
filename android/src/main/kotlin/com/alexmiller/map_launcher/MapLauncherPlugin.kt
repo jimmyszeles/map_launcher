@@ -57,7 +57,7 @@ class MapLauncherPlugin : FlutterPlugin, MethodCallHandler {
             MapModel(MapType.petal, "Petal Maps", "com.huawei.maps.app"),
             MapModel(MapType.tomtomgo, "TomTom Go", "com.tomtom.gplay.navapp"),
             MapModel(MapType.sygicTruck, "Sygic (car)", "com.sygic.aura"),
-            MapModel(MapType.sygicTruck, "Sygic (truck)", "com.sygic.truck"),
+            MapModel(MapType.sygicTruck, "Sygic (truck)", "com.sygic.truck")
     )
 
     private fun getInstalledMaps(): List<MapModel> {
