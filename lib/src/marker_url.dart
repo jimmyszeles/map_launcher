@@ -203,6 +203,9 @@ String getMapMarkerUrl({
         },
       );
 
+    case MapType.sygic:
+      return 'com.sygic.aura://coordinate|${coords.longitude}|${coords.latitude}|show';
+
     case MapType.tomtomgo:
       if (Platform.isIOS) {
         // currently uses the navigate endpoint on iOS, even when just showing a marker

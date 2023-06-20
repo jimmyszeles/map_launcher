@@ -223,6 +223,9 @@ String getMapDirectionsUrl({
         ...(extraParams ?? {}),
       });
 
+    case MapType.sygic:
+      return 'com.sygic.aura://coordinate|${destination.longitude}|${destination.latitude}|drive';
+
     case MapType.tomtomgo:
       if (Platform.isIOS) {
         return Utils.buildUrl(
